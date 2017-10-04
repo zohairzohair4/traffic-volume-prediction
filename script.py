@@ -38,8 +38,7 @@ from keras.callbacks import ModelCheckpoint
 from keras.models import Model
 import pywt
 from sklearn.svm import SVR
-
-from pre_processing.py import dataset_avg_vol_8_10_17_19, dataset_avg_vol_6_8_15_17
+from pre_processing import dataset_avg_vol_8_10_17_19, dataset_avg_vol_6_8_15_17
 
 dataset = dataset_avg_vol_6_8_15_17
 dataset_1_0_x = dataset.ix[(dataset['tollgate_id'] == 0.0) & (dataset['direction'] == 0.0)]
